@@ -1,25 +1,71 @@
+<!-- by Natalie Ohanjanians, 5/22/25. Preopening, only about us and contact information.-->
+
 <!DOCTYPE html>
 <html>
-    
+
 <head>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Moriah Medical Clinic</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Moriah Clinic</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
 </head>
 
 <body>
-    <!--<div class="nav">
-        <ul>
-            <li style="font-size: 1.5em; font-weight: bold;"><a href="index.html">Moriah Clinic</a></li> placeholder for logo
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
 
-        </ul>
-    </div> -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="2x/mmc@2x.png" alt="Moriah Medical Clinic Logo">
+    </div>
+    <nav class="navbar-links">
+      <a href="index.html">About us</a>
+     <!-- <a href="index.html">Services</a>
+      <a href="index.html">Resources</a>-->
+      <a href="index.html" style="margin-right: 100px;">Contact</a>
+    </nav>
+  </header>
+  
 
-    <p style="font-family: Times New Roman, Times, serif;  font-size: 200%" class="text">Moriah Medical Clinic<br>Under Construction in Gasoline Alley, Alberta</p>
-    <img src="mmcconstruct.jpg" style="width:900px;height:600px; margin-left: auto; margin-right: auto; display: block">
+<div class="about-section">
+  <div class="about-text">
+    <h2 class="head" >About Moriah Medical Clinic</h2>
+    <p class="text">Moriah Medical Clinic is a clinic located in Red Deer County, Alberta in the Gasoline alley area opening August 1, 2025.<br><br>
+    Our team is a group of experienced family physicians providing care across all scopes of general practice. We welcome both walk-ins and scheduled appointments to help patients get the help they need. We are dedicated to providing excellent and high-quality care to every patient.</p>
+  </div>
+  <div class="about-image">
+    <img src="mmcconstruct.jpg" alt="Clinic construction sign">
+  </div>
+</div>
+
+
+<div class="contact">
+  <div class="contact-maps">
+    <iframe width="900" height="700" style="border:0; border-radius: 8px;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMcmSmQhRdFMR6D8cxETgh48&key=AIzaSyClx6Eh0ziQMBPFFHwqY9Dp1wvss6rSA8I"></iframe>
+  </div>
+    <div class="contact-text">
+    <h2 class="head">Contact Us</h2>
+    <p class="text">Starting July 3, 2025, please call us at (587) 457-2673 to make an appointment. We are opening August 1, 2025.<br><br>518 Memorial Parkway #101, Red Deer County, AB T4E 3M7.</p>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-contact">
+    <div class="footer-item">
+      <span class="footer-icon">&#9742</span>
+      <span class="footer-text">(587) 457-2673</span>
+    </div>
+    <div class="footer-item">
+      <!--<span class="footer-icon">&#U+1F588</span>-->
+      <span class="footer-text">518 Memorial Parkway #101, Red Deer County, AB T4E 3M7</span>
+    </div>
+  </div>
+</footer>
 
 </body>
 

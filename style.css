@@ -1,40 +1,119 @@
-*{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+* {
+  font-family: 'Tinos', sans-serif;
+  line-height: 150%;
+  font-size: 18px;
 }
 body {
-    background-color:rgb(255, 255, 255);
-  }
+      margin: 0;
+    }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  background-color: white;
+  border-bottom: 30px solid #e0dfd8;
+}
+
+.navbar-logo img {
+  height: 150px;
+  padding: 20px;
+  margin-left: 200px;
+}
+
+.navbar-links a {
+  margin-left: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #39444d;
+  font-size: 30px;
+
+}
+
+.navbar-links a:hover {
+  color: #5c8cbd;
+}
+
+.head {
+  font-size: 60px;
+  color: #283947;
+}
 
 .text {
-  text-align: center; 
-  padding-top: 125px; 
-  color: rgb(8, 30, 31)
-}
-  
+  color: #283947;
+  font-size: 25px;
 
-.nav {
-  width: 100%;
-  top: 0;
-  position: fixed;
-  }
 
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: cadetblue;
-  }
-
-.nav li {
-  float: left;
-  }
-
-.nav li a {
-  display: block;
-  color: rgb(255, 255, 255);
-  padding: 16px 16px;
-  text-decoration: none;
 }
 
+.about-section {
+  margin-top: 150px;
+  display: flex;
+  gap: 40px;
+  padding: 10px 170px;
+  max-width: 100%;
+}
+
+.about-text {
+  flex: 1;
+  padding-top: 100px;
+  margin-left: 0;
+  padding-left: 20px; /* Try 0 if you want it flush with edge */
+}
+
+.about-image img {
+  max-width: 900px;
+  height: auto;
+  padding-left: 80px;
+  border-radius: 8px;
+}
+
+.contact {
+  margin-top: 150px;
+  display: flex;
+  gap: 40px;
+  padding: 10px 170px;
+  max-width: 100%;
+}
+
+.contact-text {
+  flex: 1;
+  padding-top: 100px;
+  margin-left: 0;
+  padding-right: 20px; /* Try 0 if you want it flush with edge */
+}
+
+.contact-maps {
+  padding-right: 80px;
+
+}
+
+.footer {
+  margin-top: 150px;
+  background: #e0dfd8;  /* adjust as needed */
+  padding: 20px 40px;
+  text-align: center;
+  font-family: 'Tinos', serif;
+  color: #39444d;
+  font-size: 18px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icon {
+  font-size: 22px;
+}
 
