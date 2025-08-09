@@ -1,0 +1,175 @@
+/* === GLOBAL RESET === */
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Tinos', sans-serif;
+  background-color: #fff;
+  color: #283947;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 30px solid #e0dfd8;
+}
+
+.navbar-logo img {
+  height: 150px;
+  max-width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #39444d;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #5c8cbd;
+}
+
+/* === TYPOGRAPHY === */
+.head {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #283947;
+}
+
+.text {
+  font-size: 25px;
+  line-height: 1.8;
+  color: #283947;
+}
+
+/* === LAYOUT SECTIONS === */
+.about-section,
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1400px;
+  padding: 80px 40px;
+  margin: 0 auto;
+}
+
+.about-text,
+.contact-text {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.about-image img {
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto; 
+
+  border-radius: 12px;
+  display: block;
+}
+
+/* === MAP === */
+.contact-maps {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.contact-maps iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* === FOOTER === */
+.footer {
+  margin-top: 100px;
+  background: #e0dfd8;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Roboto', serif;
+  color: #39444d;
+  font-size: 16px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icon {
+  font-size: 20px;
+}
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar-logo img {
+    height: 80px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .about-section,
+  .contact {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .head {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-maps iframe {
+    height: 300px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
