@@ -1,73 +1,188 @@
-<!-- by Natalie Ohanjanians, 5/22/25. Preopening, only about us and contact information.-->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <title>Moriah Medical Clinic</title>
+  <link rel="stylesheet" href="css/styles.css?1">
 
+
+  <link rel="icon" type="image/x-icon" href="images/mmc_hands.png">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/x-icon" href="1x/mmc_hands.png">
-  <title>Moriah Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    h1 {font-size:5em;}
+    th {text-align:right;}
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit; }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px; /* 5px rounded corners */
+      display: block;
+    }
+    .center {
+      text-align: center;
+    }
+    .title {
+      font-size: 350%;
+      color: #0f4d66;
+    }
+    .moriah-blue {
+      color: #0f4d66;
+    }
+    .para-text {
+      font-size: 18px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  </style>
 </head>
 
 <body>
 
-  <header class="navbar">
-    <div class="navbar-logo">
-      <img src="2x/mmc@2x.png" alt="Moriah Medical Clinic Logo">
-    </div>
-    <nav class="navbar-links">
-      <a href="index.html">About us</a>
-     <!-- <a href="index.html">Services</a>
-      <a href="index.html">Resources</a>-->
-      <a href="index.html" style="margin-right: 100px;">Contact</a>
-    </nav>
-  </header>
-  
-
-<div class="about-section">
-  <div class="about-text">
-    <h2 class="head" >About Moriah Medical Clinic</h2>
-    <p class="text">Moriah Medical Clinic is a clinic located in Red Deer County, Alberta in the Gasoline alley area opening August 1, 2025.<br><br>
-    Our team is a group of experienced family physicians providing care across all scopes of general practice. We welcome both walk-ins and scheduled appointments to help patients get the support they need. We are dedicated to providing excellent and high-quality care to every patient.</p>
-  </div>
-  <div class="about-image">
-    <img src="mmcconstruct.jpg" alt="Clinic construction sign">
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a src="index.html" class="w3-bar-item w3-button w3-theme-l1"><img src="images/mmc_hands.png" style="max-width:25px"></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About us</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Location</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hours of Operation</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact us</a>
   </div>
 </div>
 
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
 
-<div class="contact">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+
+  <h4 class="w3-bar-item"><b>Quick Links</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://maps.app.goo.gl/t4XvcXuo9HVihBBG9" target="_blank"><img src="images/gmap.png" style="width: 15px;height:20px;margin-right:10px;" > Google Maps</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://albertafindadoctor.ca/find-a-doc/directory?clinic=moriah+medical+clinic" target="_blank" ><img src="images/pcn.png"style="width: 20px;height:20px;margin-right:10px;">Red Deer PCN</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#" target="_blank" ><img src="images/ig.png"style="width: 20px;height:20px;margin-right:10px;">Instagram</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://www.facebook.com/people/Moriah-Medical-Clinic/61578564320887/#" target="_blank" ><img src="images/fb.png"style="width: 20px;height:20px;margin-right:10px;">Facebook</a>
+   <a class="w3-bar-item w3-button w3-hover-black" href="https://www.albertahealthservices.ca/amh/page16759.aspx" target="_blank" >Help In Tough Times</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+      <img class="card" src="images/bigahhmsg.png" style="margin-left: auto; margin-right: auto; width: 60%; display: block;">
+      <h1 class=" center title" style="padding-top:40px;">About Moriah Medical Clinic</h1>
+      <p class="para-text">Moriah Medical Clinic is a newly established family practice medical clinic in Red Deer County accepting new patients, avaliable for both walk-ins and booked appointments. <br><br> Our team is a group of experienced family physicians providing care across all scopes of general practice, including general exams, complete physicals, driver's medicals, family health, and minor procedures. We are dedicated to providing excellent and high-quality care to every patient, and we are proud to serve our local community in Central Alberta.<br><br></p>
+
+  <!-- hours -->
+      <h2 class="center" style="margin-bottom: -50px">Hours of Operation </h2>
+   <div class="w3-container w3-padding-64" id="hours">
+  <div class="w3-responsive w3-card w3-round-large" style="max-width: 600px; margin: auto;">
+    <table class="w3-table w3-striped w3-bordered w3-white">
+      <thead>
+        <tr class="moriah-blue">
+          <th>Day</th>
+          <th>Opening Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM – 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00 AM – 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>9:00 AM – 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Thursday (extended hours)</td>
+          <td>9:00 AM – 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00 AM – 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM – 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>1:00 PM – 5:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  </div>
+
+  <!-- CALL US -->
+  <p class="para-text" style="margin-top:-30px; margin-bottom:60px" >Call us for an appointment or with any questions at (587) 391-0533, or visit us at 101-518 Memorial Parkway, Red Deer County. We are located at the front of Liberty Landing.<br><br>Phone lines are open from 9:30 AM to 4:30 PM on weekdays. The phones are off for lunch from 12 PM - 1 PM on weekdays, and are not in service on the weekends.</p>
+
+  <!-- MAPS -->
+  <div class="contact">
   <div class="contact-maps">
-    <iframe width="900" height="700" style="border:0; border-radius: 8px;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMcmSmQhRdFMR6D8cxETgh48&key=AIzaSyClx6Eh0ziQMBPFFHwqY9Dp1wvss6rSA8I"></iframe>
+    <iframe width="900" height="700" style="display:block;margin-left:auto; margin-right:auto; margin-bottom:60px; border:0; border-radius: 8px;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMcmSmQhRdFMR6D8cxETgh48&key=AIzaSyClx6Eh0ziQMBPFFHwqY9Dp1wvss6rSA8I"></iframe>
   </div>
-    <div class="contact-text">
-    <h2 class="head">Contact Us</h2>
-    <p class="text">Starting July 3, 2025, please call us at (587) 391-0533 to make an appointment. We are opening August 1, 2025.<br><br>518 Memorial Parkway #101, Red Deer County, AB T4E 3M7.</p>
+
+
+
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>518 Memorial Parkway #101, Red Deer County, AB T4E 3M7<br>Phone: (587) 391-0533 <br>Fax: (587) 767-1121</h4>
     </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
 </div>
 
-<footer class="footer">
-  <div class="footer-contact">
-    <div class="footer-item">
-      <span class="footer-icon">&#9742</span>
-      <span class="footer-text">(587) 391-0533</span>
-    </div>
-    <div class="footer-item">
-      <!--<span class="footer-icon">&#U+1F588</span>-->
-      <span class="footer-text">518 Memorial Parkway #101, Red Deer County, AB T4E 3M7</span>
-    </div>
-  </div>
-</footer>
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
 
 </body>
-
 </html>
