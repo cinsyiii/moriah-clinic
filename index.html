@@ -1,194 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Moriah Medical Clinic</title>
-  <link rel="stylesheet" href="css/styles.css?1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moriah Medical Clinic</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/x-icon" href="images/mmc_hands.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-  <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-    h1 {font-size:5em;}
-    th {text-align:right;}
-    .w3-sidebar {
-      z-index: 3;
-      width: 250px;
-      top: 43px;
-      bottom: 0;
-      height: inherit; }
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      border-radius: 5px; /* 5px rounded corners */
-      display: block;
-    }
-    .center {
-      text-align: center;
-    }
-    .title {
-      font-size: 350%;
-      color: #0f4d66;
-    }
-    .moriah-blue {
-      color: #0f4d66;
-    }
-    .para-text {
-      font-size: 18px;
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a src="index.html" class="w3-bar-item w3-button w3-theme-l1"><img src="images/mmc_hands.png" style="max-width:25px"></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About us</a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Location</a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hours of Operation</a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact us</a>
-  </div>
-</div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-content">
+            <div>
+                <i class="fa-solid fa-phone"></i> (587) 391-0533
+                &nbsp;&nbsp;&nbsp;
+                <i class="fa-solid fa-print"></i> (403) 713-0322
+            </div>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-
-  <h4 class="w3-bar-item"><b>Quick Links</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://maps.app.goo.gl/t4XvcXuo9HVihBBG9" target="_blank"><img src="images/gmap.png" style="width: 15px;height:20px;margin-right:10px;" > Google Maps</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://albertafindadoctor.ca/find-a-doc/directory?clinic=moriah+medical+clinic" target="_blank" ><img src="images/pcn.png"style="width: 20px;height:20px;margin-right:10px;">Red Deer PCN</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://www.instagram.com/moriahmedicalclinic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" ><img src="images/ig.png"style="width: 20px;height:20px;margin-right:10px;">Instagram</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="https://www.facebook.com/people/Moriah-Medical-Clinic/61578564320887/#" target="_blank" ><img src="images/fb.png"style="width: 20px;height:20px;margin-right:10px;">Facebook</a>
-   <a class="w3-bar-item w3-button w3-hover-black" href="https://www.albertahealthservices.ca/amh/page16759.aspx" target="_blank" >Help In Tough Times</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
-      <img class="card" src="images/bigahhmsg.png" style="margin-left: auto; margin-right: auto; width: 60%; display: block;">
-      <h1 class=" center title" style="padding-top:40px;">About Moriah Medical Clinic</h1>
-      <p class="para-text">Moriah Medical Clinic is a family practice medical clinic in Red Deer County available for booked appointments only. <br><br> Our team is a group of experienced family physicians providing care across all scopes of general practice, including general exams, complete physicals, driver's medicals, and family health. We are dedicated to providing excellent and high-quality care to every patient, and we are proud to serve our local community in Central Alberta.<br><br></p>
-
-<p class="para-text"> Unfortunately, we are unable to accommodate walk-in visits as our schedule is fully booked each day. If you do not have a family doctor, please call the clinic and we can book a meet-and-greet appointment to help you become a patient with one of our physicians who are accepting new patients.<br><br>We are closed on Sundays and statutory holidays.</p>  <!-- hours -->
-      <h2 class="center" style="margin-bottom: -50px">Hours of Operation </h2>
-   <div class="w3-container w3-padding-64" id="hours">
-  <div class="w3-responsive w3-card w3-round-large" style="max-width: 600px; margin: auto;">
-    <table class="w3-table w3-striped w3-bordered w3-white">
-      <thead>
-        <tr class="moriah-blue">
-          <th>Day</th>
-          <th>Opening Hours</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Monday</td>
-          <td>9:00 AM – 6:00 PM</td>
-        </tr>
-        <tr>
-          <td>Tuesday</td>
-          <td>9:00 AM – 6:00 PM</td>
-        </tr>
-        <tr>
-          <td>Wednesday</td>
-          <td>9:00 AM – 6:00 PM</td>
-        </tr>
-        <tr>
-          <td>Thursday (extended hours)</td>
-          <td>9:00 AM – 8:00 PM</td>
-        </tr>
-        <tr>
-          <td>Friday</td>
-          <td>9:00 AM – 6:00 PM</td>
-        </tr>
-        <tr>
-          <td>Saturday</td>
-          <td>9:00 AM – 4:00 PM</td>
-        </tr>
-        <tr>
-          <td>Sunday</td>
-          <td>CLOSED</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-  </div>
-
-  <!-- CALL US -->
-  <p class="para-text" style="margin-top:-30px; margin-bottom:60px" >Call us for an appointment or with any questions at (587) 391-0533, or visit us at 101-518 Memorial Parkway, Red Deer County. We are located at the front of Liberty Landing.<br><br>Phone lines are open from 9 AM to 4 PM on weekdays and Saturdays. The phones are off for lunch from 12 PM - 1 PM, and are not in service on Sundays or statutory holidays.</p>
-
-  <!-- MAPS -->
-  <div class="contact">
-  <div class="contact-maps">
-    <iframe width="900" height="700" style="display:block;margin-left:auto; margin-right:auto; margin-bottom:60px; border:0; border-radius: 8px;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMcmSmQhRdFMR6D8cxETgh48&key=AIzaSyClx6Eh0ziQMBPFFHwqY9Dp1wvss6rSA8I"></iframe>
-  </div>
-
-
-
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>518 Memorial Parkway #101, Red Deer County, AB T4E 3M7<br>Phone: (587) 391-0533 <br>Fax: (403) 713-0322</h4>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                518 Memorial Parkway #101, Red Deer County, AB T4E 3B7
+            </div>
+        </div>
     </div>
 
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
 
-<!-- END MAIN -->
+            <div class="logo">
+                <img src="images/mmc@2x.png" alt="Logo">
+            </div>
+
+            <nav>
+                <a href="index.html">About us</a>
+                <a href="#">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Resources</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="divider">
+        <div class="overlay">
+            <h2>About Moriah Medical Clinic</h2>
+        </div>
+    </section>
+
+    <!-- About -->
+
+<section class="about container">
+
+    <div class="text">
+        <p>                Moriah Medical Clinic is a family practice medical clinic located
+                in Red Deer County available for booked appointments only.</p>
+        <p>                Our team is a group of experienced family physicians providing
+                care across all scopes of general practice, including general
+                exams, complete physicals, driver's medicals, and family health.
+                We are dedicated to providing excellent and high-quality care to
+                every patient, and we are proud to serve our local community in
+                Central Alberta.</p>
+        <p>                We are unable to accommodate walk-in visits as our schedule is
+                fully booked each day. If you do not have a family doctor,
+                please call the clinic and we can book a meet-and-greet
+                appointment to help you become a patient with one of our
+                physicians who are accepting new patients.</p>
+                            <p>
+                We are closed on Sundays and statutory holidays.
+            </p>
+
+<div class="hours">
+
+    <h2 class="center">Hours of Operation</h2>
+
+    <div class="hours-card">
+        <table class="hours-table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Hours</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>9:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday (extended hours)</td>
+                    <td>9:00 AM – 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>9:00 AM – 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9:00 AM – 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td><strong>CLOSED</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
+    </div>
 
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
+    <div class="image">
+<div class="gallery">
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
+    <button class="gallery-btn prev">&#10094;</button>
 
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
+    <img id="gallery-image" src="images/bigahhmsg.png" alt="Clinic">
+
+    <button class="gallery-btn next">&#10095;</button>
+
+</div>
+    </div>
+
+
+
+    </section>
+
+    <!-- Section Divider -->
+    <section class="divider">
+        <div class="overlay">
+            <h2>Our Physicians</h2>
+        </div>
+    </section>
+    <!-- Our Physicians -->
+<section class="physicians">
+
+    <div class="section-title">
+        <h2>Our Physicians</h2>
+    </div>
+
+    <div class="doctor-card">
+
+        <!-- Left Side -->
+        <div class="doctor-left">
+
+            <img src="images/drmemuna.png" alt="Dr. Memuna Amba-Ambaiowei">
+
+            <h3>Dr. Memuna Amba-Ambaiowei</h3>
+
+            <span class="status accepting">
+                Accepting New Patients
+            </span>
+
+            <p class="available">
+                Starting October 1
+            </p>
+
+            <a href="contact.html" class="btn">Book Appointment</a>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="doctor-right">
+            <br><br>
+            <p>
+            Dr. Memuna Amba-Ambaiowei is a highly qualified and compassionate Family
+Physician dedicated to providing comprehensive, patient-centered care across all
+stages of life. Grounded in a strong scientific foundation with a Bachelor of
+Science (BSc) in Human Anatomy, she earned her Medical Degree (MBBS) and
+went on to achieve postgraduate designations in both the United Kingdom
+(MRCGP) and Canada (CCFP). <br><br>
+As a fully licensed physician with the College of Physicians and Surgeons of
+Alberta (CPSA), Dr. Amba-Ambaiowei brings a wealth of international experience
+to her practice. She has developed specialized clinical interests designed to
+support families through their most critical milestones. Her areas of focus
+include women’s health—with a dedicated emphasis on perinatal and
+postpartum care—as well as child health, mental health support, elderly care,
+and compassionate palliative medicine. Dr. Amba-Ambaiowei is passionate about
+building long-term relationships with her patients, combining clinical excellence
+with deep empathy to guide them through every chapter of their healthcare
+journey.
+<!--
+            <h4>Office Hours</h4>
+
+            <table class="schedule">
+                <tr>
+                    <td>Monday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+            </table> -->
+
+
+
+        </div>
+
+    </div>
+        <div class="doctor-card">
+
+        <!-- Left Side -->
+        <div class="doctor-left">
+
+            <img src="images/drtari.jpeg" alt="Dr. Tari Amba-Ambaiowei">
+
+            <h3>Dr. Tari Amba-Ambaiowei</h3>
+
+            <span class="status accepting">
+                Accepting New Patients
+            </span>
+
+            <p class="available">
+                Starting September 1
+            </p>
+
+            <a href="contact.html" class="btn">Book Appointment</a>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="doctor-right">
+            <br><br>
+            <p>
+            Dr. Tari Amba-Ambaiowei is a dedicated, compassionate and internationally trained
+Family Medicine Physician with advanced training in public health and tropical
+medicine, bringing a broad global health perspective to clinical practice. Licensed with
+the College of Physicians and Surgeons of Alberta (CPSA), He is experienced in
+delivering patient-centred, evidence-based care across diverse healthcare settings,
+with a strong commitment to preventative medicine, community health, and
+multidisciplinary collaboration.
+<br><br>
+His clinical interests include Acute and Urgent Care Medicine, Maternal and Perinatal
+Health, Preventive and Population Health, Evidence-based Primary Care, Chronic
+Disease Management, Mental Health, Health Equity and Underserved Populations. He
+is passionate about improving healthcare access, supporting vulnerable communities
+and integrating public health principles into frontline clinical practice. With a strong
+academic foundation - spanning an MBBS, MSc in Public Health (UoL), Diploma in
+Tropical Medicine (LSHTM) and dual Family Physician Certifications (MRCGP, CCFP)—
+Dr. Amba-Ambaiowei integrates multidisciplinary expertise in delivering high‐quality,
+culturally informed medical care.
+<!--
+            <h4>Office Hours</h4>
+
+            <table class="schedule">
+                <tr>
+                    <td>Monday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+            </table> -->
+
+
+
+        </div>
+
+        
+
+    </div>        <div class="doctor-card">
+
+        <!-- Left Side -->
+        <div class="doctor-left">
+
+            <img src="images/drplaceholder.png" alt="Dr. Oghenekome Rose Isuosuo">
+
+            <h3>Dr. Oghenekome Rose Isuosuo</h3>
+
+            <span class="status accepting">
+                Accepting New Patients
+            </span>
+
+
+
+            <a href="contact.html" class="btn">Book Appointment</a> 
+            
+        </div>
+
+        <!-- Right Side -->
+        <div class="doctor-right">
+            <br><br>
+            <p>
+            
+<!--
+            <h4>Office Hours</h4>
+
+            <table class="schedule">
+                <tr>
+                    <td>Monday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+            </table> -->
+
+
+
+        </div>
+
+    </div>
+    <div class="doctor-card">
+
+        <!-- Left Side -->
+        <div class="doctor-left">
+
+            <img src="images/drplaceholder.png" alt="Dr. Edward Ohanjanians">
+
+            <h3>Dr. Edward Ohanjanians</h3>
+
+            <!--<span class="status accepting">
+                Accepting New Patients
+            </span>
+
+            <p class="available">
+                Starting October 1
+            </p>
+
+            <a href="#" class="btn">Book Appointment</a> --> <a href="contact.html" class="btn">Book Appointment</a>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="doctor-right">
+            <br><br>
+            <p>
+            
+<!--
+            <h4>Office Hours</h4>
+
+            <table class="schedule">
+                <tr>
+                    <td>Monday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8:30 AM - 4:30 PM</td>
+                </tr>
+            </table> -->
+
+
+
+        </div>
+
+    </div>
+
+
+
+</section>
 
 </body>
+<script>
+const images = [
+    "images/bigahhmsg.png",
+    "images/outside.jpg",
+
+];
+
+let current = 0;
+
+const image = document.getElementById("gallery-image");
+
+document.querySelector(".next").addEventListener("click", () => {
+    current = (current + 1) % images.length;
+    image.src = images[current];
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+    current = (current - 1 + images.length) % images.length;
+    image.src = images[current];
+});
+</script>
 </html>
-
-
-
-
-
-
